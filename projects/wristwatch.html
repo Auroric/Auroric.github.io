@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aaron Yu | WristWatch</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="/index.html#about">About</a>
+            <a href="/index.html#experience">Experience</a>
+            <a href="/index.html#education">Education</a>
+            <a href="/index.html#projects">Projects</a>
+            <a href="/index.html#skills">Skills</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/resume.html">Resume</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="top" >WristWatch</h1> 
+        <video controls width="400">
+            <source src="/media/video/wristwatch-demo.mp4">
+            <a href="https://youtu.be/WBorc2d2Ejc">Link to Video</a>
+        </video>
+        <details>
+            <summary>Only have time to read the basics?</summary>
+            <ol>
+                <li>Developed computer-vision powered Python desktop app to notify users if they are at risk for repetitive strain injuries in wrists and hands.</li>
+                <li>Trained Haar-cascade classifier in OpenCV to recognize examples of potentially injurious wrist usage.</li>
+                <li>Won Most Creative Hack award at Citrus Hack 2021.</li>
+            </ol>
+        </details>
+        WristWatch was developed at Citrus Hack 2021, where it won the Most Creative Hack award. The application employs a user's already existing webcam to track their wrist movement and notifies them through their computer's notification system if they are putting themselves at risk for repetitive strain injuries. 
+        <h2>Inspiration</h2>
+        This project, a joint collaboration between four students at UC San Diego, came to be out of a shared interest for video games. Specifically, we noticed that after long sessions using a computer, our wrists would begin to hurt. As a result, we started to do our research on diseases like carpal tunnel, and eventually settled on developing an accessible solution to help people avoid repetitive strain injuries, especially as the COVID-19 pandemic forced people to be on their computers for longer hours every day.
+        <h2>Building</h2> 
+
+        We began by discussing various solutions for the problem, and concluded that webcams, which most people would already have at home due to the pandemic, would be the easiest and least demanding of our potential users to use for our project. Given that all four team members already had experience in Python, it was the obvious choice of language, and OpenCV was selected due to one member's prior experience.
+        <br>
+        After setting up our systems, we began to determine which parts of OpenCV we would want to use. We settled on the Haar-cascade classifier, as it seemed to be the easiest for people with relatively little computer vision experience to use. This is mainly because it would only require us to get sample images of peoples' wrists, and then annotate them with whether or not the person was potentially at risk for repetitive strain injuries.
+        <figure>
+            <img src="/media/images/training.webp" width="400">
+            <figcaption>Training our model</figcaption>
+        </figure>
+        <br>
+        <aside>The Haar-cascade classifier is powerful, as it requires only a few annotated positive and negative images to train on before it becomes reasonably accurate in differentiating them.</aside>
+        <h2>Accomplishments</h2>
+        We were proud of our ability to create an application that employed machine learning in such a small amount of time, especially since none of us had prior experience with the topic. 
+        <h2>What's Next For WristWatch</h2>
+        This project was built long before I personally started even <em>learning</em> about machine learning, and so it uses a relatively simple model which is likely not the best option -- it looks for rough matches to image samples we have annotated, but this is only sustainable with huge amounts of annotated data, correcting for lighting, skin tone, and other factors. A better solution would likely be to employ one of many pre-existing models to get someone's wrist pose, and then use the angle between different joints to determine when to send notifications to the user. 
+        <h2>Usage</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Python 3</li>
+            <li>opencv-python</li>
+        </ul>
+        After cloning the repository, run <code>HandMouseTracking.py</code>.
+    </main>
+    <footer>
+        <nav>
+            <a href="#top">Return To Top</a>
+            <a href="/index.html#about">About</a>
+            <a href="/index.html#experience">Experience</a>
+            <a href="/index.html#education">Education</a>
+            <a href="/index.html#projects">Projects</a>
+            <a href="/index.html#skills">Skills</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/resume.html">Resume</a>
+        </nav>
+    </footer>
+  </body>
+</html>

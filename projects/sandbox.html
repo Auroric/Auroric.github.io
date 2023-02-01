@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aaron Yu | Sandbox</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="/index.html#about">About</a>
+            <a href="/index.html#experience">Experience</a>
+            <a href="/index.html#education">Education</a>
+            <a href="/index.html#projects">Projects</a>
+            <a href="/index.html#skills">Skills</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/resume.html">Resume</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Sandbox</h1> 
+        Welcome to the Sandbox! This is where all my work-in-progress projects go, whether they be web-development experiments, incomplete project pages, or just random command-line tools I've made.
+
+        <br>
+        <canvas width="30" height="30">
+            A box with a color a like.
+        </canvas>
+        <script>
+            const canvas = document.querySelector('canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(10, 10, 100, 100);
+        </script>
+        <br>
+        A color I like:
+        <br>
+
+        This text is in a <span>span.</span>
+        <br>
+
+        This text is the MDN example for pre:
+        <pre>
+            L          TE
+              A       A
+                C    V
+                 R A
+                 DOU
+                 LOU
+                REUSE
+                QUE TU
+                PORTES
+              ET QUI T'
+              ORNE O CI
+               VILISÉ
+              OTE-  TU VEUX
+               LA    BIEN
+              SI      RESPI
+                      RER       - Apollinaire
+          </pre>
+
+        <br>
+        This image should change based on the window size:
+        <br>
+        <picture>
+            <source srcset="/media/images/wristwatch-preview.png" media="(orientation: portrait">
+            <img width="100"src="/media/images/pfp.jpeg">
+        </picture>
+        
+        <br>
+        A song I like:
+        <br>
+        <audio controls src="/media/audio/audio-clip.mp3"></audio>
+
+        <template>
+            <table>
+                <caption>This is an invisible table caption</caption>
+                <colgroup>
+                    <col>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <td>hi</td>
+                    <td>hi</td>
+                    <td>hi</td>
+                </tr>
+            </table>
+            Maybe one day some JavaScript will load me
+        </template>
+    </main>
+  </body>
+</html>
