@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Aaron Yu | Contact Me</title>
   </head>
   <body>
@@ -35,6 +35,7 @@
                 <div>
                     <label for="ice-cream-select">Favorite ice cream flavor:</label>
                     <select name="ice-cream-select" id="ice-cream-select" required>
+                        <option value="none">None</option>
                         <optgroup label="Good Flavors">
                             <option value="vanilla">Vanilla</option>
                             <option value="strawberry">Strawberry</option>
@@ -51,10 +52,10 @@
                     <input list="roles" id="role-select" name="role-select">
 
                     <datalist id="roles">
-                        <option value="Recruiter"/>
-                        <option value="Educator"/>
-                        <option value="Student"/>
-                        <option value="Other"/>
+                        <option value="Recruiter"></option>
+                        <option value="Educator"></option>
+                        <option value="Student"></option>
+                        <option value="Other"></option>
                     </datalist>
                 </div>
             </fieldset>
@@ -64,7 +65,7 @@
                 </legend>
                 <div>
                     <label for="message">Message:</label>
-                    <textarea rows="10" cols="40" required></textarea>
+                    <textarea id="message" rows="10" cols="40" required></textarea>
                 </div>
             </fieldset>
             <input type="submit">
