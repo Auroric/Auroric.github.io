@@ -5,6 +5,7 @@
     --sidenav-link-hover-color: #fff;
 
     --section-name-color: #093149;
+    --section-break-color: #CDC8D0;
 
     --icon-color: #093149;
 
@@ -81,7 +82,8 @@
     color: var(--sidenav-link-default-color);
     text-decoration: none;
     text-transform: uppercase;
-    font-weight:700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
 }
 
 .sidenav a:hover {
@@ -91,7 +93,6 @@
 main>section {
     position: relative;
     margin-left: var(--sidenav-size);
-    padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
     min-height: 100vh;
@@ -100,3 +101,34 @@ main>section {
     flex-direction: column;
     justify-content: center;
 }
+
+hr {
+    border: 1px solid --section-break-color;
+}
+
+#about h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 6rem;
+    color: var(--section-name-color);
+    margin-bottom: -1rem;
+}
+#about h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+#about h1+h3 {
+    font-size: 1.5rem;
+}
+
+#about h1+h3+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    
+}
+
+#about p {
+    margin-bottom: 8rem;
+}
+
+
