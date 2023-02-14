@@ -124,11 +124,11 @@ hr {
 #about h1+h3+h3 {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    
 }
 
 #about p {
     margin-bottom: 8rem;
+    max-width: 80ch;
 }
 
 
