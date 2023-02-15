@@ -129,6 +129,7 @@ section#about {
 #about h3 {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 #about h1+h3 {
@@ -166,21 +167,37 @@ section#experience {
 
 .experience-entry > .company {
     grid-area: company;
+    font-family: 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--sidenav-background-color);
 }
 
 .experience-entry > .role {
     grid-area: role;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .experience-entry > .duration {
     grid-area: duration;
     justify-self: right;
     margin-left: 5vw;
+    color: #F77F50;
+    font-family: 'Jost';
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .experience-entry > .location {
     grid-area: location;
     justify-self: right;
+    color: #F77F50;
+    font-family: 'Jost';
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .experience-entry > .description {
@@ -194,9 +211,4 @@ section#experience {
 
 .experience-entry li:last-child {
     margin-bottom: unset;
-}
-
-#experience section h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
 }
