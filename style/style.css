@@ -38,24 +38,24 @@ span {
         "nav-bottom";
 }
 
-.sidenav>section {
+.sidenav > section {
     display: flex;
     justify-content: center;
     align-items: center;
     row-gap: 1.2rem;
 }
 
-.nav-main {
+.sidenav > .nav-main {
     grid-area: nav-main;
     flex-direction: column;
 }
 
-.nav-secondary {
+.sidenav > .nav-secondary {
     grid-area: nav-secondary;
     flex-direction: column;
 }
 
-.nav-bottom {
+.sidenav > .nav-bottom {
     grid-area: nav-bottom;
     flex-direction: row;
 }
@@ -124,7 +124,6 @@ section#about {
     font-size: 6rem;
     color: var(--section-name-color);
     margin-bottom: -1rem;
-    
 }
 
 #about h3 {
@@ -151,6 +150,8 @@ section#experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .experience-entry {
@@ -159,6 +160,8 @@ section#experience {
         "role duration"
         "company location"
         "description .";
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .experience-entry > .company {
@@ -172,6 +175,7 @@ section#experience {
 .experience-entry > .duration {
     grid-area: duration;
     justify-self: right;
+    margin-left: 5vw;
 }
 
 .experience-entry > .location {
@@ -181,11 +185,18 @@ section#experience {
 
 .experience-entry > .description {
     grid-area: description;
+    margin-top: 1rem;
+}
+
+.experience-entry li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-entry li:last-child {
+    margin-bottom: unset;
 }
 
 #experience section h3 {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
 }
-
-
