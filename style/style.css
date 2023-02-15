@@ -205,6 +205,11 @@ section#experience {
     margin-top: 1rem;
 }
 
+.experience-entry em {
+    color: var(--sidenav-background-color);
+    font-style: normal;
+    font-weight: 700;
+}
 .experience-entry li {
     margin-bottom: 0.5rem;
 }
