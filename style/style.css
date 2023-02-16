@@ -220,3 +220,114 @@ section#experience {
 .experience-entry li:last-child {
     margin-bottom: unset;
 }
+
+@media (max-width: 800px) {
+    .experience-entry {
+        grid-template-areas: 
+            "role"
+            "company"
+            "description"
+            "duration"
+            "location";
+    }
+
+    .experience-entry .duration {
+        justify-self: left;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .experience-entry .location {
+        justify-self: left;
+        margin-left: 0;
+    }
+}
+
+/* Education */
+section#education {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.university {
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+        "institution duration"
+        "degree ."
+        "description .";
+}
+
+.university .institution {
+    grid-area: institution;
+    font-family: 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.university .duration {
+    grid-area: duration;
+
+    font-family: 'Jost';
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 800px) {
+    .university .duration:before {
+        content: "•";
+
+        font-family: 'Source Sans Pro';
+        font-size: 1.2rem;
+        color: var(--section-name-color);
+
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .university {
+        grid-template-areas:
+            "institution institution institution"
+            "degree spacer duration"
+            "description description description";
+        grid-template-columns: auto 0fr 1fr;
+    }
+}
+
+.university > .role { 
+    grid-area: degree;
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.university > .description {
+    grid-area: description;
+}
+
+#education .description {
+    margin-top: 1rem;
+}
+
+#education li {
+    margin-bottom: 0.5rem;
+}
+
+#education li:last-child {
+    margin-bottom: 7rem;
+}
+
+
+
+
+
