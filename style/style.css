@@ -125,7 +125,7 @@ main>section {
     min-height: 100vh;
 }
 
-@media (max-width: 985px){
+@media (max-width: 984px){
     main>section {
         margin-left: 0;
     }
