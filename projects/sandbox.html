@@ -4,88 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Aaron Yu | Sandbox</title>
+    <link rel="icon" href="/media/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/project_style.css">
   </head>
   <body>
-    <header>
-        <nav>
-            <a href="/index.html#about">About</a>
-            <a href="/index.html#experience">Experience</a>
-            <a href="/index.html#education">Education</a>
-            <a href="/index.html#projects">Projects</a>
-            <a href="/index.html#skills">Skills</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/resume.html">Resume</a>
-        </nav>
-    </header>
     <main>
-        <h1>Sandbox</h1> 
-        Welcome to the Sandbox! This is where all my work-in-progress projects go, whether they be web-development experiments, incomplete project pages, or just random command-line tools I've made.
+        <nav class="sidenav">
+            <div class="nav-main">
+                <picture>
+                    <source media="(min-width: 985px)" srcset="/media/images/pfp.jpeg">
+                    <img src="/media/images/pfp_64.jpeg" alt="Image of myself">
+                </picture>
+                <a href="index.html#about">About</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#skills">Skills</a>
+            </div>
+            <div class="nav-secondary">
+                <a href="https://auroric.github.io/resume/">Resume</a>
+                <a href="mailto:axyu@ucsd.edu">Contact</a>
+            </div>
+            <div class="nav-bottom">
+                <a href="https://github.com/Auroric"><svg class="icon"><use xlink:href="/media/icons/brands.svg#github"></use></svg></a>
+                <a href="https://www.linkedin.com/in/aaron-x-yu/"><svg class="icon"><use xlink:href="/media/icons/brands.svg#linkedin"></use></svg></a>
+            </div>
+        </nav>
 
-        <br>
-        <canvas width="30" height="30">
-            A box with a color a like.
-        </canvas>
-        <script>
-            const canvas = document.querySelector('canvas');
-            const ctx = canvas.getContext('2d');
-            ctx.fillStyle = 'blue';
-            ctx.fillRect(10, 10, 100, 100);
-        </script>
-        <br>
-        A color I like:
-        <br>
+        <section id="sandbox">
+            <h1>Sandbox</h1> 
+            <p>Welcome to the Sandbox! This is where all my work-in-progress projects go, whether they be web-development experiments, incomplete project pages, or just random command-line tools I've made.</p>
+            <br>
+            <p>Find a spinny boi below</p>
+        </section>
 
-        This text is in a <span>span.</span>
-        <br>
-
-        This text is the MDN example for pre:
-        <pre>
-            L          TE
-              A       A
-                C    V
-                 R A
-                 DOU
-                 LOU
-                REUSE
-                QUE TU
-                PORTES
-              ET QUI T'
-              ORNE O CI
-               VILISÉ
-              OTE-  TU VEUX
-               LA    BIEN
-              SI      RESPI
-                      RER       - Apollinaire
-          </pre>
-
-        <br>
-        This image should change based on the window size:
-        <br>
-        <picture>
-            <source srcset="/media/images/wristwatch-preview.png" media="(orientation: portrait)">
-            <img width="100" src="/media/images/pfp.jpeg" alt="This image changes based on the window size">
-        </picture>
-        
-        <br>
-        A song I like:
-        <br>
-        <audio controls src="/media/audio/audio-clip.mp3"></audio>
-
-        <template>
-            <table>
-                <caption>This is an invisible table caption</caption>
-                <colgroup>
-                    <col>
-                    <col span="2">
-                </colgroup>
-                <tr>
-                    <td>hi</td>
-                    <td>hi</td>
-                    <td>hi</td>
-                </tr>
-            </table>
-            Maybe one day some JavaScript will load me
-        </template>
+        <section id="experience">
+            <h1>Experience</h1>
+            <section class="experience-entry">
+                <h2 class="institution">LinkedIn</h2>
+                <h2 class="role">Mobile Engineer Intern</h2>
+                <h3 class="duration">June 2023 - September 2023</h3>
+                <h3 class="location">Sunnyvale, CA</h3>
+                <ul class="description">
+                    <li>Incoming mobile engineer intern at LinkedIn.</li>
+                </ul>
+        </section>
     </main>
   </body>
 </html>
