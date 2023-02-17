@@ -323,7 +323,7 @@ section#experience {
     margin-bottom: unset;
 }
 
-@media (max-width: 985px) {
+@media (max-width: 735px) {
     .experience-entry {
         grid-template-areas: 
             "role"
@@ -383,7 +383,7 @@ section#education {
     color: var(--secondary-color);
 }
 
-@media (max-width: 985px) {
+@media (max-width: 600px) {
     .university .duration::before {
         content: "•";
 
