@@ -159,6 +159,71 @@ main>section {
     }
 }
 
+@media (max-width: 720px) {
+    .sidenav > .nav-bottom {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .sidenav > .nav-secondary {
+        display: none;
+    }
+
+    #about h1 {
+        font-size: 4rem !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .sidenav > .nav-main > a:first-of-type {
+        display: none;
+    }
+
+    #education li:last-child {
+        margin-bottom: 0rem !important;
+    }
+
+    #projects :last-child {
+        margin-bottom: 0rem !important;
+    }
+
+    .experience-entry {
+        margin-bottom: 0rem !important;
+    }
+
+    .university {
+        grid-template-areas:
+            "institution"
+            "degree"
+            "duration"
+            "description" !important;
+    }
+
+    .university .duration::before {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .sidenav > .nav-main > a:last-of-type {
+        display: none;
+    }
+
+    main>section {
+        padding: 1rem;
+        min-height: unset;
+    }
+
+    #about h1 {
+        font-size: 3rem !important;
+        margin-bottom: 1rem !important; 
+    }
+    
+}
+
 main > section > h1 {
     font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 3rem;
