@@ -14,9 +14,29 @@
     --sidenav-size: 15rem;
 }
 
+/* Fix Arial spacing to match Lato */
+@font-face { 
+    font-family: 'Lato-Arial';
+    src: local(Arial);
+    font-size: 16px;
+    line-height: 1.6;
+    word-spacing: -1.15px;
+    letter-spacing: -0.05px;
+}
+
+@font-face {
+    font-family: "Trebuchet";
+    src: local('Trebuchet MS');
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.6;
+    word-spacing: 1.1px;
+    letter-spacing: -1px;
+}   
+
 * {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Lato-Arial', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -72,7 +92,7 @@ span {
     color: var(--accent-color);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-weight: 600;
 }
 
@@ -110,7 +130,7 @@ main>section {
 }
 
 main > section > h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 3rem;
 }
 
@@ -122,14 +142,14 @@ section#about {
 }
 
 #about h1 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', 'Arial', sans-serif;
     font-size: 6rem;
     color: var(--section-name-color);
     margin-bottom: -1rem;
 }
 
 #about h3 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -169,7 +189,7 @@ section#experience {
 
 .experience-entry > .institution {
     grid-area: company;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -178,7 +198,7 @@ section#experience {
 
 .experience-entry > .role {
     grid-area: role;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -188,7 +208,7 @@ section#experience {
     justify-self: right;
     margin-left: 5vw;
     color: var(--secondary-color);
-    font-family: 'Jost';
+    font-family: 'Jost', 'Arial', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -197,7 +217,7 @@ section#experience {
     grid-area: location;
     justify-self: right;
     color: var(--secondary-color);
-    font-family: 'Jost';
+    font-family: 'Jost', 'Arial', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -259,7 +279,7 @@ section#education {
 
 .university .institution {
     grid-area: institution;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -268,7 +288,7 @@ section#education {
 .university .duration {
     grid-area: duration;
 
-    font-family: 'Jost';
+    font-family: 'Jost', 'Arial', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -279,7 +299,7 @@ section#education {
     .university .duration::before {
         content: "•";
 
-        font-family: 'Source Sans Pro';
+        font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
         font-size: 1.2rem;
         color: var(--section-name-color);
 
@@ -298,7 +318,7 @@ section#education {
 
 .university > .role { 
     grid-area: degree;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -374,7 +394,7 @@ section#projects {
 }
 
 .project .name {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -382,7 +402,7 @@ section#projects {
 
 .project .short-description {
     color: var(--primary-color);
-    font-family: "Lato";
+    font-family: 'Lato', 'Lato-Arial', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -411,7 +431,7 @@ section#skills {
 }
 
 .skill-category h2 {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Trebuchet', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
