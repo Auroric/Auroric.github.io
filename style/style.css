@@ -80,25 +80,25 @@ span {
     color: var(--sidenav-link-hover-color);
 }
 
-/* Iconography */
+/* Global Iconography */
 .icon {
     width: 2em;
     height: 2em;
     vertical-align: -0.125em;
     padding: 10px;
-}
 
-.icon#github {
-    fill: var(--icon-color);
-}
-
-.icon#linkedin {
     fill: var(--icon-color);
 }
 
 /* Content */
 hr {
     border: 1px solid var(--section-break-color);
+}
+
+em {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 700;
 }
 
 main>section {
@@ -162,12 +162,12 @@ section#experience {
     grid-template-areas: 
         "role duration"
         "company location"
-        "description .";
+        "description description";
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.experience-entry > .company {
+.experience-entry > .institution {
     grid-area: company;
     font-family: 'Source Sans Pro';
     font-size: 1.3rem;
@@ -205,12 +205,6 @@ section#experience {
 .experience-entry > .description {
     grid-area: description;
     margin-top: 1rem;
-}
-
-.experience-entry em {
-    color: var(--primary-color);
-    font-style: normal;
-    font-weight: 700;
 }
 
 .experience-entry li {
@@ -282,7 +276,7 @@ section#education {
 }
 
 @media (max-width: 800px) {
-    .university .duration:before {
+    .university .duration::before {
         content: "•";
 
         font-family: 'Source Sans Pro';
@@ -327,7 +321,76 @@ section#education {
     margin-bottom: 7rem;
 }
 
+.description strong {
+    font-weight: bold;
+}
 
+/* Projects */
+section#projects {
+    display: flex;
+    flex-direction: column;
 
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.project > .divide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.divide-container *:first-child {
+    order: -1;
+}
+
+@media (min-width: 800px) {
+    .project > .divide-container::before {
+        content: "";
+        height: 1.2rem;
+        border: 1px solid var(--accent-color);
+        align-self: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .project > .divide-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.project .name {
+    font-family: 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project .short-description {
+    color: var(--primary-color);
+    font-family: "Lato";
+    font-size: 1.1rem;
+}
+
+.project li {
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.project .icon-container {
+    display: flex;
+}
