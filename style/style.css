@@ -65,7 +65,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    row-gap: 1.2rem;
+    gap: 1.2rem;
 }
 
 .sidenav > .nav-main {
@@ -128,6 +128,35 @@ main>section {
     padding-left: 3rem;
     padding-right: 3rem;
     min-height: 100vh;
+}
+
+@media (max-width: 985px){
+    main>section {
+        margin-left: 0;
+    }
+
+    section#about {
+        min-height: calc(100vh + 4rem);
+    }
+
+    .sidenav {
+        width: 100vw;
+        position: fixed;
+        z-index:1;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        height: 4rem;
+        justify-content: space-around;
+    }
+
+    .sidenav img {
+        display: none;
+    }
+
+    .sidenav > .nav-main, .sidenav > .nav-secondary, .sidenav > .nav-bottom {
+        flex-direction: row;
+    }
 }
 
 main > section > h1 {
@@ -236,7 +265,7 @@ section#experience {
     margin-bottom: unset;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 985px) {
     .experience-entry {
         grid-template-areas: 
             "role"
@@ -296,7 +325,7 @@ section#education {
     color: var(--secondary-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 985px) {
     .university .duration::before {
         content: "•";
 
@@ -377,7 +406,7 @@ section#projects {
     order: -1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     .project > .divide-container::before {
         content: "";
         height: 1.2rem;
