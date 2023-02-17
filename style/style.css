@@ -14,14 +14,18 @@
     --sidenav-size: 15rem;
 }
 
+
 /* Fix Arial spacing to match Lato */
 @font-face { 
     font-family: 'Lato-Arial';
     src: local(Arial);
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    word-spacing: -1.15px !important;
-    letter-spacing: -0.05px !important;
+
+    @supports(font-size: 16px) {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        word-spacing: -1.15px !important;
+        letter-spacing: -0.05px !important;
+    }
 }
 
 /* Fix Trebuchet spacing to match Source Sans Pro */
