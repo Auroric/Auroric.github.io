@@ -19,24 +19,13 @@
 @font-face { 
     font-family: 'Lato-Arial';
     src: local(Arial);
-
-    @supports(font-size: 16px) {
-        font-size: 16px !important;
-        line-height: 1.6 !important;
-        word-spacing: -1.15px !important;
-        letter-spacing: -0.05px !important;
-    }
 }
 
 /* Fix Trebuchet spacing to match Source Sans Pro */
 @font-face {
     font-family: "Trebuchet";
     src: local('Trebuchet MS');
-    font-size: 24px !important;
     font-weight: 900 !important;
-    line-height: 1.6 !important;
-    word-spacing: 1.1px !important;
-    letter-spacing: -1px !important;
 }   
 
 * {
