@@ -336,6 +336,10 @@ section#projects {
     padding-bottom: 3rem;
 }
 
+#projects > :last-child {
+    margin-bottom: 3rem;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -393,4 +397,26 @@ section#projects {
 
 .project .icon-container {
     display: flex;
+}
+
+/* Skills */
+section#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.skill-category h2 {
+    font-family: 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-category p {
+    color: var(--section-name-color);
 }
